@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Asparagus</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link type="text/javascript" src="app.js" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="header">
+
+                <img src="imgs/logo.png" alt="logo" height="120" width="120" id="logo"> 
+                
+                <h1>
+                    <i>Usage Tracking</i>
+                </h1>
+                
+
+                <div class="nav">
+
+                    <ul>
+                        <li>
+                            <a>Tracker</a>
+                        </li>
+                        <li>
+                            <a>Tips</a>
+                        </li>
+                        <li>
+                            <a>Stats</a>
+                        </li>
+                    </ul>    
+                </div>    
+
+            </div>
+            <div class="inputs">
+                
+                <fieldset>
+                    <legend>Food Bought</legend>
+                <table class="foodin">
+                    <tr class="fooditem">
+                        <td>Food item:</td>
+                        <td><input type="text" name="food" id="food"></td>
+                    </tr>
+                    <tr class="qty">
+                        <td>Quantity:</td>
+                        <td><input type="number" name="qty" id="qty"></td>
+                    </tr>
+                    <tr class="unit">
+                        <td>Unit:</td>
+                        <td><input type="text" name="unit" id="unit"></td>
+                    </tr>
+                    <tr class="bought">
+                        <td>You bought </td>
+                        <td id="bought"> </td>
+                    </tr>
+                    <tr class="addbutton">
+                        <td colspan=2><button onClick="addbutton()">
+                            Add
+                            </button>
+                    </tr>
+                </table>
+                    </fieldset>
+                
+                <fieldset>
+                    <legend>Food Wasted</legend>
+                 <table class="foodout">
+                    <tr class="fooditem">
+                        <td>Food item:</td>
+                        <td><input type="text" name="food" id="food"></td>
+                    </tr>
+                    <tr class="qty">
+                        <td>Quantity:</td>
+                        <td><input type="number" name="qty" id="qty"></td>
+                    </tr>
+                    <tr class="unit">
+                        <td>Unit:</td>
+                        <td><input type="text" name="unit" id="unit"></td>
+                    </tr>
+                    <tr class="bought">
+                        <td>You wasted </td>
+                        <td id="bought"> </td>
+                    </tr>
+                    <tr class="addbutton">
+                        <td colspan=2><button onClick="button()">
+                            Add
+                            </button>
+                    </tr>
+                </table>
+                    </fieldset>
+            </div>
+        </div>
+        <script>
+
+
+            var button = function addbutton(){
+                if(!document.getElementById("unit").value == "eaches") {
+                document.getElementById("bought").innerHTML = " " + document.getElementById("qty").value + " " + document.getElementById("unit").value + " of " + document.getElementById("food").value;
+                } else {
+                    document.getElementById("bought").innerHTML = "  " + document.getElementById("qty").value + " " + document.getElementById("food").value;
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+.container{
+    width: 400px;
+    height: 700px;
+    color: white;
+    background-color: seagreen;
+    
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#logo{
+    float: left;
+}
+
+
+
+h1{
+    float: right;
+    display:inline-block;
+    margin-top: 40px;
+    padding-right: 40px;
+}
+
+.foodin{
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 20px;
+	color: white;
+    clear: left;
+}
+
+.foodout{
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 20px;
+	color: white;
+    clear: left;
+}
+
+
+.nav{
+    clear:both;
+    background-color: darkgreen;
+    margin:0, auto;
+    height: 50px;
+}
+
+.nav ul{
+    margin:0, auto;
+    list-style: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.nav ul li{
+    margin:0, auto;
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.nav ul li a{
+    margin:0, auto;
+    display: block;
+}
+
+.nav ul li a:hover{
+    background-color:seagreen;
+}
+
+button{
+    background-color: darkgreen;
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
