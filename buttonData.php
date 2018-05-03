@@ -16,19 +16,19 @@
 				
 				$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				
-				$sqlUser = "SELECT Tracked.FoodID FROM Tracked WHILE Tracked.UserID = this.UserID";
+				$sqlUser = "SELECT tracked.foodID FROM tracked WHILE tracked.userID = this.userID";
 				
 				$statementUser = $conn->prepare($sqlUser);
 				$statementCustomer->execute();
 				
-				$data = array("status" => "success","Tracked" => $statementCustomer->fetchAll(PDO::FETCH_ASSOC));
+				$data = array("status" => "success","tracked" => $statementCustomer->fetchAll(PDO::FETCH_ASSOC));
 									
 			} catch(PDOException $e) {
 				$data = arrray("error", $e->getMessage()); //what is this
 			}
 			
-			foreach($data['FoodID'] as $key => $user) {
-				echo "<button type="button" onclick="databaseUpdate()">"$user['foodname']"<br>"$user['consumption']"</button>";
+			foreach($data['foodID'] as $key => $user) {
+				echo "<button type="button" onclick="databaseUpdate()">"$user['foodname']"<br>"$user['safeamount']"</button>";
 			}
 		}
 	}
@@ -39,12 +39,19 @@ echo "<script>
 		var bought = prompt("Input new purchase amount", 0);
 		var wasted = prompt("Input new wasted amount", 0);
 		if (bought!=null) {
-			<-- databaseUpdate fn() -->
+			var currentbought = "SELECT totalbought FROM tracked";
+			var newtotalbought = currentbought += bought;
+			UPDATE tracked
+			SET totalbought = newtotalbought;
 			echo "Record updated successfully";
 		}
 		if (wasted!=null) {
-			<-- databaseUpdate fn() -->
+			var currentwasted = "SELECT totalbought FROM tracked";
+			var newtotalwasted = currentwasted += wasted
+			UPDATE tracked
+			SET totalwasted = newtotalwasted;
 			echo "Record updated successfully"
 		}
+		
 	}
 </script>";

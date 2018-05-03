@@ -26,14 +26,13 @@
 				type: "GET",
 				data: {output: 'html'},
 				success: function(data) {
-					console.log(data);
-						$("#trackedItemsButtons").append(data);		
-					},
+					console.log(data);						$("#trackedItemsButtons").append(data);	
+				},
 					error: function(jqXHR, textStatus, errorThrown) {
 						$("#p1").text(textStatus + " " + errorThrown);
 					}
-				});
 			});
+		});
 	</script>
 
 </section>
