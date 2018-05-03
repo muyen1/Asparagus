@@ -36,11 +36,7 @@ session_start();
 
 
 <header>
-
-	<nav>
-
-		
-		
+	
 		<div class="main-wrapper">
 		<a href="index.php" class="logo"><img src="images/logo.png" height="80px" width="105px"></a>	
 		<div class="dropdown">
@@ -51,12 +47,13 @@ session_start();
 						<a href="tips.php">Tips</a>
 						<a href="signup.php">Sign Up</a>
 						<a href="aboutus.php">About Us</a>
+						<a href="tracker.php">Tracker</a>
         			</div>
 		
 					
 
 		
 		</div>
-	</nav>
+
 
 </header>

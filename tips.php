@@ -1,9 +1,9 @@
 <?php
   include_once 'header.php';
 ?>
-<section class="main-container">
-    <div class="main-wrapper">
-        <h2>Tips</h2>
+
+    <div class="tips">
+    <h1><strong>Tips</strong></h1>
          
         <div class="container">
         <div class="mySlides">
@@ -70,7 +70,7 @@
           -->
 </div>
     
-</section>
+
 
 
 <script>
