@@ -28,7 +28,7 @@
 			}
 			
 			foreach($data['foodID'] as $key => $user) {
-				echo "<button type="button" onclick="databaseUpdate()">"$user['foodname']"<br>"$user['safeamount']"</button>";
+				echo "<button class="foodbutton" type="button" onclick="databaseUpdate()">"$user['foodname']"<br>"$user['safeamount']"</button>";
 			}
 		}
 	}
