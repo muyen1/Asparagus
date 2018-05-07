@@ -1,0 +1,40 @@
+[03-May-2018 17:49:46 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/asparagu/public_html/includes/dbh.inc.php on line 8
+[03-May-2018 17:49:46 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 7
+[03-May-2018 17:49:46 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 8
+[03-May-2018 17:49:46 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 9
+[03-May-2018 17:49:46 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 10
+[03-May-2018 17:49:46 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 11
+[03-May-2018 17:50:12 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/asparagu/public_html/includes/dbh.inc.php on line 8
+[03-May-2018 17:50:12 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 7
+[03-May-2018 17:50:12 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 8
+[03-May-2018 17:50:12 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 9
+[03-May-2018 17:50:12 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 10
+[03-May-2018 17:50:12 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 11
+[03-May-2018 22:41:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 36
+[03-May-2018 22:41:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 36
+[03-May-2018 22:47:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 36
+[03-May-2018 23:45:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 36
+[03-May-2018 23:45:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 36
+[04-May-2018 00:16:51 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 36
+[04-May-2018 00:46:57 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/signup.inc.php on line 36
+[04-May-2018 00:47:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 22
+[04-May-2018 01:58:15 UTC] PHP Notice:  Undefined index: upassword in /home/asparagu/public_html/includes/loginValidation.php on line 14
+[04-May-2018 02:10:34 UTC] PHP Notice:  Undefined index: password in /home/asparagu/public_html/includes/loginValidation.php on line 19
+[04-May-2018 02:18:35 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 19
+[04-May-2018 02:21:37 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 19
+[04-May-2018 02:21:37 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 20
+[04-May-2018 02:27:34 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 19
+[04-May-2018 02:27:34 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 20
+[04-May-2018 02:27:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/includes/loginValidation.php:19) in /home/asparagu/public_html/includes/loginValidation.php on line 31
+[04-May-2018 02:27:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/includes/loginValidation.php:19) in /home/asparagu/public_html/includes/loginValidation.php on line 31
+[04-May-2018 02:31:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/includes/loginValidation.php:19) in /home/asparagu/public_html/includes/loginValidation.php on line 32
+[04-May-2018 02:33:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/includes/loginValidation.php:19) in /home/asparagu/public_html/includes/loginValidation.php on line 31
+[04-May-2018 02:38:50 UTC] PHP Fatal error:  Call to undefined function anchor() in /home/asparagu/public_html/includes/loginValidation.php on line 33
+[04-May-2018 02:42:37 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 19
+[04-May-2018 02:42:37 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 20
+[04-May-2018 02:43:58 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 19
+[04-May-2018 02:43:58 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 20
+[04-May-2018 02:51:06 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 19
+[04-May-2018 02:51:06 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 20
+[04-May-2018 02:54:09 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 19
+[04-May-2018 02:54:09 UTC] PHP Notice:  Undefined offset: 0 in /home/asparagu/public_html/includes/loginValidation.php on line 20

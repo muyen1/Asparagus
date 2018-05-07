@@ -1,9 +1,14 @@
-<?php include 'header.php'; ?>
+<?php
+	include 'header.php';
+?>
 
 <head>
+
 	<meta charset="utf-8">
+    
 	<title>Login with Facebook or Twitter</title>
-	<link rel="stylesheet" href="main.css">
+
+	<link rel="stylesheet" href="index.css">
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
 
 	<!--[if lt IE 9]>
@@ -13,14 +18,10 @@
 </head>
 
 <body>
-	
-	<section>
-			<h1>Welcome <br>Please login</h1>
-	</section>
 
       <div id="login">
 
-
+		<h1><strong>Welcome.</strong> Please login.</h1>
 
 		<form action="javascript:void(0);" method="get">
 

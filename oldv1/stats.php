@@ -1,21 +1,11 @@
-<?php include_once 'header.php'; ?>
+<?php
+  include_once 'header.php';
+?>
 
-<head>
-	<meta charset="utf-8">
-	<title>Stats</title>
-	<style>
-		<?php include 'main.css'; ?>
-	</style>
-</head>
-
-<section>
-		<h1>Stats</h1>
-		<?php
-			if (isset($_SESSION['u_id'])) {
-				echo "You are logged in!";
-			}
-		?>	
-</section>
+  <div class="stats">
+  </br>  
+  <h1><strong>Stats</strong></h1>
+  
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -23,75 +13,67 @@
 <script src="http://www.chartjs.org/dist/2.7.2/Chart.bundle.js"></script>
 <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
 
-<section>
-	<div id="container">
-		<script>
-  			Highcharts.chart('container', {
-  			chart: {
-    			type: 'bar'
-  			},
-  			title: {
-    			text: 'Stacked bar chart'
-  			},
-  			xAxis: {
-    			categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
- 			},
-  			yAxis: {
-    			min: 0,
-    			title: {
-      				text: 'Total fruit consumption'
-    			}
-  			},
-  			legend: {
-    			reversed: true
-  			},
-  			plotOptions: {
-    			series: {
-      				stacking: 'normal'
-    			}
-  			},
-  			series: [{
-    			name: 'Consumed',
-    			data: [5, 3, 4, 7, 2]
-  			},  
-			{
-    			name: 'Wasted',
-    			data: [3, 4, 4, 2, 5]
-  			}]
-			});
-		</script>
+
+<div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto">
+
+<script>
+  Highcharts.chart('container', {
+  chart: {
+    type: 'bar'
+  },
+  title: {
+    text: 'Stacked bar chart'
+  },
+  xAxis: {
+    categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: 'Total fruit consumption'
+    }
+  },
+  legend: {
+    reversed: true
+  },
+  plotOptions: {
+    series: {
+      stacking: 'normal'
+    }
+  },
+  series: [{
+    name: 'Consumed',
+    data: [5, 3, 4, 7, 2]
+  },  {
+    name: 'Wasted',
+    data: [3, 4, 4, 2, 5]
+  }]
+});
+</script>
 </div>
-</section>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<section>
+</br>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+
+
+
+
 
 <div id="canvas-holder" style="min-width: 320px; max-width: 800px; height: 400px; margin: -90px">
 		<canvas id="chart-area"></canvas>
 	</div>
-	
-</section>
 
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-<section>
-
-	<div>
+	</div>
 <!--
 	<button id="randomizeData">Randomize Data</button>
 	<button id="addDataset">Add Dataset</button>
@@ -129,12 +111,6 @@
 			var ctx = document.getElementById('chart-area').getContext('2d');
 			window.myPie = new Chart(ctx, config);
 		};
-		
-			</script>
-	</div>
-  
-</section>
-		<!--
 
 //		document.getElementById('randomizeData').addEventListener('click', function() {
 //			config.data.datasets.forEach(function(dataset) {
@@ -169,7 +145,9 @@
 //		document.getElementById('removeDataset').addEventListener('click', function() {
 //			config.data.datasets.splice(0, 1);
 //			window.myPie.update();
-//		});*/
+//		});
+	</script>
+  
 
 
 <?php

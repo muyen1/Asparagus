@@ -1,0 +1,120 @@
+[03-May-2018 22:47:28 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 22:48:47 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 23:34:28 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 23:35:08 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 23:35:37 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 23:35:50 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 23:35:53 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 23:37:18 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 23:37:20 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 23:37:24 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[03-May-2018 23:38:26 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[04-May-2018 00:13:32 UTC] PHP Parse error:  syntax error, unexpected 'foodbutton' (T_STRING), expecting ',' or ';' in /home/asparagu/public_html/buttonData.php on line 31
+[04-May-2018 00:16:37 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 00:17:11 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 01:03:52 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 01:17:42 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 02:10:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 02:11:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 02:11:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 02:13:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 02:16:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 02:16:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 02:16:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 02:18:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 02:27:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 02:27:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:19:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:23:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:24:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:25:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:26:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:30:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:31:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:35:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:37:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:37:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:42:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:43:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:53:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 03:53:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 04:41:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 04:41:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:68) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 09:15:57 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 15:44:00 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 15:49:48 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 15:51:31 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 15:54:09 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 15:54:32 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 15:54:33 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 15:55:07 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:00:12 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:05:05 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:05:07 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:06:41 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:08:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:08:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:08:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:08:47 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:09:44 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:10:07 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:10:28 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:12:00 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:15:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:15:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:15:21 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:16:10 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:17:21 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:18:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:63) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:18:29 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:20:02 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:20:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:62) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:20:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:62) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:20:34 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:20:35 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:24:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:62) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:24:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:62) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:25:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/header.php:62) in /home/asparagu/public_html/index.php on line 6
+[04-May-2018 16:29:50 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:30:10 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:32:56 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:33:05 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:40:35 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:42:02 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:43:00 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:43:28 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:44:14 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:46:43 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:49:00 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:50:13 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:50:15 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:51:02 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 16:51:28 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 17:57:57 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 18:47:47 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 18:53:09 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 18:56:07 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 19:51:32 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 19:51:37 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 20:49:26 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 21:36:05 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 21:36:08 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 21:42:18 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 21:46:09 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 21:46:16 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 21:47:32 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 21:50:23 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 21:50:43 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[04-May-2018 21:54:24 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[05-May-2018 17:57:20 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[05-May-2018 17:57:20 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[06-May-2018 06:50:11 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[07-May-2018 00:59:47 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[07-May-2018 01:00:21 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[07-May-2018 03:10:26 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[07-May-2018 03:39:09 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[07-May-2018 03:40:11 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[07-May-2018 03:40:15 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[07-May-2018 06:59:20 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[07-May-2018 09:23:18 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34
+[07-May-2018 09:24:24 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/asparagu/public_html/buttonData.php on line 34

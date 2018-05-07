@@ -1,15 +1,16 @@
-<?php
-	include 'header.php';
-?>
+<?php include 'header.php'; ?>
 
-<style>
-	<?php
-	include 'main.css'; ?>
-</style>
+<head>
+	<meta charset="utf-8">
+	<title>Login with Facebook or Twitter</title>
+	<style>
+		<?php include 'main.css'; ?>
+	</style>
+</head>
 
 <section class="main-container">
 	<div class="main-wrapper">
-		<h2>Tracked Items</h2>
+		<h1>Tracked Items</h1>
 		<?php
 			if (isset($_SESSION['u_id'])) {
 				echo "You are logged in!";
