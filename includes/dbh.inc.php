@@ -1,8 +1,9 @@
 <?php
 
 $dbserverName = "localhost";
-$dbuserName = "root";
-$dbpassword = "";
-$dbname = "loginsystem";
+$dbuserName = "asparagu_jt";
+$dbpassword = "team8gumby";
+$dbname = "asparagu_main";
 
 $conn = mysqli_connect( $dbserverName , $dbuserName , $dbpassword , $dbname );
+

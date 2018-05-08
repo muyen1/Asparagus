@@ -24,7 +24,7 @@ body {
 	background: #f4f4f4;
 	color: #5a5656;
 	font: 100%/1.5em 'Open Sans', sans-serif;
-  margin: 0;
+    margin: 0;
 }
 
 a { text-decoration: none; }
@@ -55,11 +55,11 @@ form fieldset input[type="text"], input[type="password"] {
 	color: #5a5656;
 	font-family: inherit;
 	font-size: 14px;
-	height: 50px;
+	height: 50px; 
 	outline: none;
 	padding: 0px 10px;
-	width: 280px;
-  -webkit-appearance:none;
+	width: 280px; 
+    -webkit-appearance:none;
 }
 
 form fieldset input[type="submit"] {
@@ -72,7 +72,7 @@ form fieldset input[type="submit"] {
 	height: 50px;
 	text-transform: uppercase;
 	width: 300px;
-  -webkit-appearance:none;
+    -webkit-appearance:none;
 }
 
 form fieldset a {

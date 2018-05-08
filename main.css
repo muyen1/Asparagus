@@ -28,7 +28,12 @@ body {
 
 a { text-decoration: none; }
 
-h1 { font-size: 1em; }
+h1 { 
+    font-size: 1em;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+
+
+}
 
 h1, p {
 	margin-bottom: 10px;
@@ -494,7 +499,14 @@ header nav ul li a:hover {
     margin: 50px auto;
 	width: 300px;
 }
-
+h1 {
+    color: #2c2c2c;
+    /*background-color: #d5d5d5;*/
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
 /* signup.php*/
 .signup h1{
     margin: 50px auto;
@@ -522,4 +534,43 @@ body .aboutus{
     color: #5a5656;
     margin:0px auto;
     background: #f4f4f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 991px){
+
+/* logo PC*/
+    .logo {
+
+    float: left !important;
+    width: 85% !important;
+
+    }
+
 }
