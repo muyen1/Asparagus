@@ -1,6 +1,5 @@
 <?php
 /* shows all error messages, just a direction*/
-session_start();
 ?>
 <!DOCTYPE html>
 <html>
