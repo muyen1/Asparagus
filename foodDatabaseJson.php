@@ -1,6 +1,5 @@
 <?php
     error_reporting(0);
-    session_start();
 
     include 'pdo_connect.php';
     

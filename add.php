@@ -1,8 +1,8 @@
 <?php
-/* Inserts data into the database*/
+/* escape string to prevent sql injections */
 $foodname = $mysqli->escape_string($_POST['foodname']);
 $unit = $mysqli->escape_string($_POST['unit']);
-// Check if already exists
+/* Inserts data into the database*/
 $result = $mysqli->query("SELECT * FROM food WHERE foodname='$foodname'") or die($mysqli->error());
 
 //if the rows returned are more than 0, data exist
