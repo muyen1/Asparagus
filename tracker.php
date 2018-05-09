@@ -32,6 +32,14 @@ session_start();
 
          <div id="add">   
           <h1>Start Tracking Now!</h1>
+		  
+		  	<input list= "foodlist" name="searchedFood" placeholder="search for foods  in the database" id="searchedFood"/>
+
+			  <datalist id="foodlist"></datalist>
+
+			<button type="submit" >start tracking</button>
+		</form>
+		
 		  <input type="text" required="on" placeholder="search for current" name="unit"/>
           </br>
           <form action="tracker.php" method="post" autocomplete="off">
@@ -88,8 +96,31 @@ session_start();
 
           <script>
             $(document).ready(function(){
+				$.ajax({
+			        url: "foodData.php",
+    			    dataType: 'json',
+				    type: "GET",
+    			    success: function(data){
+
+                        for(let i =0; i < data['foods'].length; i++){
+                        
+                          var option = document.createElement("option");
+                          option.text = data['foods'][i].foodname;
+              //nextOption.setAttribute("value", data['foods'][i].foodname );
+
+
+                            document.getElementById("foodlist").appendChild(option);
+                        }
+
+		            },
+				    error: function(jqXHR, textStatus, errorThrown) {
+                        $("#p1").text(textStatus + " " + errorThrown
+                            + jqXHR.responseText);
+                    }
+
+				});
               
-              $("#show").click(function(){
+/*               $("#show").click(function(){
                 e.preventDefault();
                   $.ajax({
                     url: "foodDatabaseJson.php",
@@ -115,7 +146,7 @@ session_start();
                       $("#p1").text(textStatus + " " + errorThrown + jqXHR.responseText);
                     }
                   });
-              });
+              }); */
             });
           </script>
 
