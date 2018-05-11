@@ -4,7 +4,6 @@
 <?php 
 /* Main page with two forms: Add New and Tracked Items */
 require 'includes/dbh.inc.php';
-session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,6 +20,9 @@ session_start();
 
 
 <body>
+    
+
+    
   <div class="form">
       
       <ul class="tab-group">
@@ -32,7 +34,14 @@ session_start();
 
          <div id="add">   
           <h1>Start Tracking Now!</h1>
-		  <input type="text" required="on" placeholder="search for current" name="unit"/>
+		<input list= "foodlist" name="searchedFood" placeholder="search for foods  in the database" id="searchedFood"/>
+
+			  <datalist id="foodlist">
+        
+        </datalist>
+
+			<button type="submit" >start tracking</button>
+		</form>
           </br>
           <form action="tracker.php" method="post" autocomplete="off">
         
@@ -88,34 +97,57 @@ session_start();
 
           <script>
             $(document).ready(function(){
-              
-              $("#show").click(function(){
-                e.preventDefault();
-                  $.ajax({
-                    url: "foodDatabaseJson.php",
-                    dataType: "json",
-                    //data:
-                    type: "GET",
-                    success: function(data){
+                $.ajax({
+			        url: "foodData.php",
+    			    dataType: 'json',
+				    type: "GET",
+    			    success: function(data){
 
-                      for(var index =0; index < data.item.length; index++){
-                        var item = document.createElementById("div");
-                        item.style.position("center");
-                        item.style.backgroundColor("green");
-						item.style.border = "width style color|initial|inherit"  
-                      //  var itemName = document.createTextNode(data.item.foodname.[index]);
-                      var itemName = document.createTextNode("test");
-                        item.appendChild(itemName);
-                        //append/prepa
-                        $("#trackedList").appendChild(item);
-                      }
+                        for(let i =0; i < data['foods'].length; i++){
+                        
+                          var option = document.createElement("option");
+                          option.text = data['foods'][i].foodname;
+              //nextOption.setAttribute("value", data['foods'][i].foodname );
 
-                    },
-                    error: function(jqXHR, textStatus, errorThrown) {
-                      $("#p1").text(textStatus + " " + errorThrown + jqXHR.responseText);
+
+                            document.getElementById("foodlist").appendChild(option);
+                        }
+
+		            },
+				    error: function(jqXHR, textStatus, errorThrown) {
+                        $("#p1").text(textStatus + " " + errorThrown
+                            + jqXHR.responseText);
                     }
-                  });
-              });
+
+  		});
+              
+    //           $("#show").click(function(){
+    //             e.preventDefault();
+    //               $.ajax({
+    //                 url: "foodDatabaseJson.php",
+    //                 dataType: "json",
+    //                 //data:
+    //                 type: "GET",
+    //                 success: function(data){
+
+    //                   for(var index =0; index < data.item.length; index++){
+    //                     var item = document.createElementById("div");
+    //                     item.style.position("center");
+    //                     item.style.backgroundColor("green");
+				// 		item.style.border = "width style color|initial|inherit"  
+    //                   //  var itemName = document.createTextNode(data.item.foodname.[index]);
+    //                   var itemName = document.createTextNode("test");
+    //                     item.appendChild(itemName);
+    //                     //append/prepa
+    //                     $("#trackedList").appendChild(item);
+    //                   }
+
+    //                 },
+    //                 error: function(jqXHR, textStatus, errorThrown) {
+    //                   $("#p1").text(textStatus + " " + errorThrown + jqXHR.responseText);
+    //                 }
+    //               });
+    //           });
             });
           </script>
 
@@ -144,6 +176,7 @@ session_start();
 
 </body>
 </html>
+
 <?php
 	include 'footer.php';
 ?>

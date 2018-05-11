@@ -41,7 +41,7 @@ function dataQuery($query, $params){
             // && $queryType[0] =='SELECT' ??
             //if($queryResults !=null){
 
-                $results = array("result" => $queryResults->fetchAll(PDO::FETCH_ASSOC));
+                $results = $queryResults->fetchAll(PDO::FETCH_ASSOC);
                         
                 return $results;
             //}

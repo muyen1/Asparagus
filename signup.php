@@ -2,19 +2,23 @@
 	include 'header.php';
 ?>
 
+<?php
+if(isset($_GET['Message'])){
+    echo $_GET['Message'];
+}
+?>
+
 	<div class="signup">
 	<h1><strong>Sign Up</strong></h1>
-		<form class="signup-form" action="includes/signup.php" method="POST">
-			<input type="text" name="first" placeholder="firstname">
-			<input type="text" name="last" placeholder="lastname">
-			<input type="text" name="email" placeholder="email">
-			<input type="text" name="uid" placeholder="username">
-			<input type="password" name="pwd" placeholder="password">
-			<button type="submit" name="submit">I'm In !</button>
+		<form class="signup-form" action="includes/signup.inc.php" method="POST">
+			<input type="email" name="email" placeholder="email" required>
+			<input type="text" name="username" placeholder="username" required>
+			<input type="password" name="password" placeholder="password" required>
+			<input type="password" name="REpassword" placeholder="confirm password" required>
+			<input type="submit" name="submit" value="submit">
 		</form>
 	</div>
 
-
 <?php
-	include_once 'footer.php';
+	include 'footer.php';
 ?>
