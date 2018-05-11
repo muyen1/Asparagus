@@ -9,15 +9,9 @@ if(isset($_POST['submit'])){
 		$uid = mysqli_real_escape_string($conn, $_POST['username']);
     	$pwd = mysqli_real_escape_string($conn, $_POST['password']);
 		
-		$sql_u = "SELECT * FROM user WHERE uid = '$uid'";
 		$sql_e = "SELECT * FROM user WHERE email = '$email'";
-		$res_u = mysqli_query($conn, $sql_u);
 		$res_e = mysqli_query($conn, $sql_e);
 		
-		if ((mysqli_num_rows($res_u)) > 0) {
-			$Message = urlencode('Sorry, username already taken!  Please try again.');
-			header("location:../signup.php?Message=".$Message);	
-		}
 		if ((mysqli_num_rows($res_e)) > 0) {
 			$Message = urlencode('Sorry, that email already used!  Please try again.');
 			header("location:../signup.php?Message=".$Message);
