@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +32,7 @@
   				}
 			}
     </script>
-	<script src="<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	
 </head>
 <body>
@@ -51,5 +53,9 @@
 				<a href="aboutus.php">About Us</a>	
         	</div>
 		</div>
+
 	</div>
+
+
 </header>
+

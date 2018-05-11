@@ -1,6 +1,13 @@
 <?php
 	include 'header.php';
 ?>
+
+<style>
+	a {
+		color: #5a5656;
+	}
+</style>
+
 <div class="allBack">
 	<div class="aboutus">
 	<h1><strong>About Us</strong></h1>
@@ -20,7 +27,7 @@
 
     <h1><strong>About Asparagus</strong></h1>
 	
-	<p>We imagined an application which was not a food tracker, but instead a rate of use calculator which informed users how much perishable product they can safely use before it spoils.</p>
+	<p>We imagined an application which was not a food tracker, but <a href="easteregg.php" >instead</a> instead a rate of use calculator which informed users how much perishable product they can safely use before it spoils.</p>
 	<p>We focused on making the application as easy to use as possible, so people were more likely to actually use it.</p>
 	<p>People can use this application for as many or few items as they'd like,<br> and only need to select a food to track, and input when they use new product</p>
 	<p></p>
@@ -34,12 +41,7 @@
 	<p>We ran into the problem that if we use our time variable as number of days between date started tracking and present, <br>if a user stopped using when enough data had been input, number of days would continue to tick up and change the purchasable amount. </p>
 	<p>We realized that we could time stamp every user input, but that this would create an overly complicated algorithm. </p>
 	<p>We instead settled on offering the user a stop (and possibly restart) button to address this problem.</p>
-	
-
-
-
-
-	</div>
+</div>
 </div>
 <?php
 	include 'footer.php';

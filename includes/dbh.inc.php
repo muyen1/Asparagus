@@ -7,3 +7,4 @@ $dbname = "asparagu_main";
 
 $conn = mysqli_connect( $dbserverName , $dbuserName , $dbpassword , $dbname );
 
+?>
