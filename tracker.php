@@ -33,7 +33,7 @@ session_start();
          <div id="add">   
           <h1>Start Tracking Now!</h1>
 		  <input type="text" required="on" placeholder="search for current" name="unit"/>
-          </br>
+          <br>
           <form action="tracker.php" method="post" autocomplete="off">
         
             <div class="field-wrap">
@@ -50,7 +50,7 @@ session_start();
             <input type="text" required autocomplete="on" name="unit"/>
           </div>
           
-          <button class="button button-block" name="add" />Track!</button>
+          <button class="button button-block" name="add" >Track!</button>
           
           </form>
 
@@ -75,9 +75,9 @@ session_start();
             </label>
             <input type="text" name="search" />
     
-            </br>
-            </br>
-            </br>
+            <br>
+            <br>
+            <br>
 
             
           </div>
@@ -120,14 +120,14 @@ session_start();
           </script>
 
 
-          <button id="show" type="submit" class="button button-block" name="tracked" />check items</button>
+          <button id="show" type="submit" class="button button-block" name="tracked" >check items</button>
 
           <div id="trackedList">
             <p>  Currently Tracking </p>
 
 
           </div>
-          <button type="submit" class="button button-block" name="tracked" />Stop</button>
+          <button type="submit" class="button button-block" name="tracked" >Stop</button>
           
           </form>
 
