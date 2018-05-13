@@ -21,6 +21,85 @@ require 'includes/dbh.inc.php';
 
 <body>
     
+    <script>
+            $(document).ready(function(){
+                  $.ajax({
+                    url: "foodData.inc.php",
+                    dataType: 'json',
+                    type: "GET",
+                  success: function(data){
+
+                    
+                            for(let i =0; i < data['foods'].length; i++){
+
+                              var foodname = data['foods'][i].foodname;
+                              var food_id = data['foods'][i].foodID;
+                            
+                              var option = document.createElement("option");
+                              option.text = food_id;
+                              option.setAttribute("value", foodname );
+
+
+                                document.getElementById("foodlist").appendChild(option);
+                            }
+                    
+
+                    },
+                error: function(jqXHR, textStatus, errorThrown) {
+                            $("#p1").text(textStatus + " " + errorThrown
+                                + jqXHR.responseText);
+                        }
+
+  	      	});
+
+                  $.ajax({
+                    url: "tracker_id.inc.php",
+                    dataType:"json",
+                    type:"GET",
+                    success: function(data){
+
+                      for(let i =0; i < data['tracked'].length; i++){
+
+                        //if userID session is not set, dont display.
+
+                        // var foodId = data['tracked'][i].foodID;
+                        // for(let j=0; i<data['food'].length; j++){
+                        //   if(foodId == data['food'][j].foodID){
+                        //     var food  = data['food'][j].foodname;
+                        //     break;
+                        //   }
+                        // }
+
+
+                        //var entry = document.createElement("div");
+                        //entry.style.border = "1px dotted black";
+
+                        var p = document.createElement("p");
+                        var text= document.createTextNode(data['tracked'][i].foodname +"/" +  data['tracked'][i].unit + ": total bought = " + data['tracked'][i].totalbought
+                                                                +", total wasted = " + data['tracked'][i].totalwasted
+                                                                +", consumption = " + data['tracked'][i].consumption
+                                                                +", roc = " + data['tracked'][i].roc
+                                                                +", safeamount = " + data['tracked'][i].safeamount
+                                                                +", time1 = " + data['tracked'][i].time1
+                                                                +", time2 = " + data['tracked'][i].time2);
+                        p.appendChild(text);
+
+
+                        document.getElementById("trackedList").appendChild(p);
+                      }
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                          $("#p1").text(textStatus + " " + errorThrown
+                              + jqXHR.responseText);
+                    }
+
+
+                  });
+              //} 
+            });
+          </script>
+    
 
     
   <div class="form">
@@ -34,55 +113,46 @@ require 'includes/dbh.inc.php';
 
          <div id="add">   
           <h1>Start Tracking Now!</h1>
+    <form action="newFoodToTracked.inc.php" method="POST">
 		<input list= "foodlist" name="searchedFood" placeholder="search for foods  in the database" id="searchedFood"/>
 
-			  <datalist id="foodlist">
-        
-        </datalist>
-
-			<button type="submit" >start tracking</button>
-		</form>
+			  <datalist id="foodlist"></datalist>
+			  
           </br>
           <form action="tracker.php" method="post" autocomplete="off">
         
-            <div class="field-wrap">
-            <label>
-              Food Name<span class="req"></span>
-            </label>
-            <input type="text" required autocomplete="on" name="foodname"/>
-          </div>
           
           <div class="field-wrap">
             <label>
               Quantity<span class="req"></span>
             </label>
-            <input type="text" required autocomplete="on" name="unit"/>
+            <input type="text" required autocomplete="on" name="quant"/>
           </div>
           
           <button class="button button-block" name="add" />Track!</button>
           
-          </form>
+    </form>
 
         </div>
           
         <div id="tracked">   
           <h1>Tracked Items</h1>
           
-          <form action="tracker.php" method="post" autocomplete="off">
-          <button type="submit"class="button button-block" name=""> Add</button>
+          <form action="includes/addNewFood.inc.php" method="post" autocomplete="off">
+          <button type="submit"class="button button-block" name="add"> Add</button>
           <div class="field-wrap">
             
             <label>
               Food Name<span class="req"></span>
             </label>
-            <input type="text" autocomplete="on" name="foodname"/>
+            <input type="text" autocomplete="on" name="foodname" required/>
           </div>
           
           <div class="field-wrap">
             <label>
-              Quantity of Waste<span class="req"></span>
+              Unit<span class="req"></span>
             </label>
-            <input type="text" name="search" />
+            <input type="text" name="unit" required/>
     
             </br>
             </br>
@@ -90,66 +160,7 @@ require 'includes/dbh.inc.php';
 
             
           </div>
-          <div>
-          
 
-          </div>
-
-          <script>
-            $(document).ready(function(){
-                $.ajax({
-			        url: "foodData.php",
-    			    dataType: 'json',
-				    type: "GET",
-    			    success: function(data){
-
-                        for(let i =0; i < data['foods'].length; i++){
-                        
-                          var option = document.createElement("option");
-                          option.text = data['foods'][i].foodname;
-              //nextOption.setAttribute("value", data['foods'][i].foodname );
-
-
-                            document.getElementById("foodlist").appendChild(option);
-                        }
-
-		            },
-				    error: function(jqXHR, textStatus, errorThrown) {
-                        $("#p1").text(textStatus + " " + errorThrown
-                            + jqXHR.responseText);
-                    }
-
-  		});
-              
-    //           $("#show").click(function(){
-    //             e.preventDefault();
-    //               $.ajax({
-    //                 url: "foodDatabaseJson.php",
-    //                 dataType: "json",
-    //                 //data:
-    //                 type: "GET",
-    //                 success: function(data){
-
-    //                   for(var index =0; index < data.item.length; index++){
-    //                     var item = document.createElementById("div");
-    //                     item.style.position("center");
-    //                     item.style.backgroundColor("green");
-				// 		item.style.border = "width style color|initial|inherit"  
-    //                   //  var itemName = document.createTextNode(data.item.foodname.[index]);
-    //                   var itemName = document.createTextNode("test");
-    //                     item.appendChild(itemName);
-    //                     //append/prepa
-    //                     $("#trackedList").appendChild(item);
-    //                   }
-
-    //                 },
-    //                 error: function(jqXHR, textStatus, errorThrown) {
-    //                   $("#p1").text(textStatus + " " + errorThrown + jqXHR.responseText);
-    //                 }
-    //               });
-    //           });
-            });
-          </script>
 
 
           <button id="show" type="submit" class="button button-block" name="tracked" />check items</button>
