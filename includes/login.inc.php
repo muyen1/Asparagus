@@ -25,7 +25,6 @@ if(isset($_POST['submit'])){
         }
         if ($hashpwdCheck == true) {
             $_SESSION['username'] = $row['username'];
-            $_SESSION['userid'] = $row['userid'];
             $Message = urlencode('Welcome back to Asparagus!');
             header("location:../tracker.php?Message=".$Message);
         }

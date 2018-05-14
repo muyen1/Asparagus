@@ -121,7 +121,33 @@ require 'includes/dbh.inc.php';
 
                                 });
 
-                           
+                                //           $("#show").click(function(){
+                                //             e.preventDefault();
+                                //               $.ajax({
+                                //                 url: "foodDatabaseJson.php",
+                                //                 dataType: "json",
+                                //                 //data:
+                                //                 type: "GET",
+                                //                 success: function(data){
+
+                                //                   for(var index =0; index < data.item.length; index++){
+                                //                     var item = document.createElementById("div");
+                                //                     item.style.position("center");
+                                //                     item.style.backgroundColor("green");
+                                // 		item.style.border = "width style color|initial|inherit"  
+                                //                   //  var itemName = document.createTextNode(data.item.foodname.[index]);
+                                //                   var itemName = document.createTextNode("test");
+                                //                     item.appendChild(itemName);
+                                //                     //append/prepa
+                                //                     $("#trackedList").appendChild(item);
+                                //                   }
+
+                                //                 },
+                                //                 error: function(jqXHR, textStatus, errorThrown) {
+                                //                   $("#p1").text(textStatus + " " + errorThrown + jqXHR.responseText);
+                                //                 }
+                                //               });
+                                //           });
                             });
                         </script>
 
@@ -130,10 +156,7 @@ require 'includes/dbh.inc.php';
 
                         <div id="trackedList">
                             <p>  Currently Tracking </p>
-                            
-                            <?php
-                            include "includes/button_gen.php";
-                            ?>
+
 
                         </div>
                         <button type="submit" class="button button-block" name="tracked">Stop</button>
