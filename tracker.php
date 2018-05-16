@@ -9,24 +9,13 @@ require 'includes/dbh.inc.php';
 <html>
     <head>
         <title>Form</title>
-       <link rel="stylesheet" href="css/style.css">
+        <?php include 'css/css.html'; ?>
 
-        <!-- becauase no header -->
-        <script
-                src="https://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
     </head>
 
 
-<<<<<<< HEAD
-<body>
-    
-    <script>
-=======
     <body>
             <script>
->>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
             $(document).ready(function(){
                   $.ajax({
                     url: "foodData.inc.php",
@@ -38,20 +27,12 @@ require 'includes/dbh.inc.php';
                             for(let i =0; i < data['foods'].length; i++){
 
                               var foodname = data['foods'][i].foodname;
-<<<<<<< HEAD
-                              var food_id = data['foods'][i].foodID;
-                            
-                              var option = document.createElement("option");
-                              option.text = food_id;
-                              option.setAttribute("value", foodname );
-=======
                               var unit = data['foods'][i].unit;
                             
                               var option = document.createElement("option");
                               option.text = unit;
                               option.setAttribute("value", foodname );
                               option.setAttribute('data-unit', unit);
->>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
 
 
                                 document.getElementById("foodlist").appendChild(option);
@@ -66,7 +47,6 @@ require 'includes/dbh.inc.php';
 
   	      	});
 
-<<<<<<< HEAD
                   $.ajax({
                     url: "tracker_id.inc.php",
                     dataType:"json",
@@ -110,36 +90,21 @@ require 'includes/dbh.inc.php';
                     }
 
 
-=======
+                  });
                   
-                $('#searchedFood').change(function(){
+                  $('#searchedFood').change(function(){
                       var description = $(this).val();
                       var product = $('#foodlist > option[value="' + description + '"]').data('unit');
                       
                       $('#autoUnit').val(product);
->>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
                   });
+
               //} 
             });
           </script>
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
 
 
-<<<<<<< HEAD
-         <div id="add">   
-          <h1>Start Tracking Now!</h1>
-    <form action="newFoodToTracked.inc.php" method="POST">
-		<input list= "foodlist" name="searchedFood" placeholder="search for foods  in the database" id="searchedFood"/>
 
-			  <datalist id="foodlist"></datalist>
-			  
-          </br>
-          <form action="tracker.php" method="post" autocomplete="off">
-=======
         <div class="form">
 
             <div class="tab-content">
@@ -148,39 +113,26 @@ require 'includes/dbh.inc.php';
                     <h1>Start Tracking Now!</h1>
                     
     <form action="newFoodToTracked.inc.php" method="POST">
-        <input type="reset" value="clear">        
-        
+<input type="reset" value="clear">        
 		<input list= "foodlist" name="searchedFood" placeholder="search for foods in the database" id="searchedFood"/>
 
 			  <datalist id="foodlist"></datalist>
 			  
->>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
+          </br>
+          <form action="tracker.php" method="post" autocomplete="off">
         
           
           <div class="field-wrap">
             <label>
               Unit<span class="req"></span>
             </label>
-<<<<<<< HEAD
-            <input type="text" required autocomplete="on" name="quant"/>
-=======
             <input type="text" required id="autoUnit" readonly autocomplete="on" name="unit"/>
->>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
           </div>
           
           <button class="button button-block" name="add" />Track!</button>
           
     </form>
 
-<<<<<<< HEAD
-        </div>
-          
-        <div id="tracked">   
-          <h1>Tracked Items</h1>
-          
-          <form action="includes/addNewFood.inc.php" method="post" autocomplete="off">
-          <button type="submit"class="button button-block" name="add"> Add</button>
-=======
                 </div>
 
                 <div id="tracked">   
@@ -217,7 +169,6 @@ require 'includes/dbh.inc.php';
 
  <form action="addNewFood.inc.php" method="post" autocomplete="off">
          
->>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
           <div class="field-wrap">
             
             <label>
@@ -231,20 +182,10 @@ require 'includes/dbh.inc.php';
               Unit<span class="req"></span>
             </label>
             <input type="text" name="unit" required/>
-<<<<<<< HEAD
-    
-            </br>
-            </br>
-            </br>
-
-            
-          </div>
-=======
             <button type="submit"class="button button-block" name="add"> Add</button>
             </form>
 
 
->>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
 
 
             </div><!-- tab-content -->
