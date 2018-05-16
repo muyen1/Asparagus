@@ -16,8 +16,17 @@ include 'includes/pdo_connect.php';
         $data['foods'] = $results;
 
         $json = json_encode($data);
+<<<<<<< HEAD
 
         echo $json;
+=======
+        
+        echo $json;
+
+
+        
+        
+>>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
     //}
 
 

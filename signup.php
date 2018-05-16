@@ -1,5 +1,5 @@
 <?php
-	include 'header.php';
+	include 'includes/header.php';
 ?>
 
 <?php
@@ -20,5 +20,5 @@ if(isset($_GET['Message'])){
 	</div>
 
 <?php
-	include 'footer.php';
+	include 'includes/footer.php';
 ?>

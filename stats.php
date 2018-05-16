@@ -1,5 +1,5 @@
 <?php
-  include_once 'header.php';
+  include_once 'includes/header.php';
 ?>
 
 <?php
@@ -18,108 +18,114 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="http://www.chartjs.org/dist/2.7.2/Chart.bundle.js"></script>
-<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
 
 
-<div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto">
-
-<script>
-  Highcharts.chart('container', {
-  chart: {
-    type: 'bar'
-  },
-  title: {
-    text: 'Stacked bar chart'
-  },
-  xAxis: {
-    categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
-  },
-  yAxis: {
-    min: 0,
-    title: {
-      text: 'Total fruit consumption'
-    }
-  },
-  legend: {
-    reversed: true
-  },
-  plotOptions: {
-    series: {
-      stacking: 'normal'
-    }
-  },
-  series: [{
-    name: 'Consumed',
-    data: [5, 3, 4, 7, 2]
-  },  {
-    name: 'Wasted',
-    data: [3, 4, 4, 2, 5]
-  }]
-});
-</script>
+<div id="container" style="min-width: 310px; max-width: 100%; height: 400px; margin: 0 auto">
 </div>
+<div id="container1" style="min-width: 310px; max-width: 100%; height: 400px; margin: 0 auto">
+</div>
+<script type="text/javascript">
 
+$(document).ready(function() {
 
-</br>
+    $.getJSON('includes/stats.inc.php', function(data) {
+        // bar chart
+        Highcharts.chart('container', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'User habits for food consumption'
+            },
+            xAxis: {
+                categories: data["foodname"]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                text: 'Food consumption for each item'
+                }
+            },
+            legend: {
+                reversed: true
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                series: {
+                stacking: 'normal'
+                },
+            },
+            series: [{
+                name: 'Wasted',
+                data: data["totalwasted"],
+                color: '#ff794d'
+            }, {
+                name: 'Consumed',
+                data: data["totalbought"],
+                color: '#53d926'
+            }]
+        });
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+        //pie chart
+        console.log(data);
+        var j=k=0;
+        for(var i=0; i < data["foodname"].length; i++){
+            j += data["totalbought"][i];
+            k += data["totalwasted"][i];
+        }
+        console.log(j);
+        console.log(k);
 
+        Highcharts.chart('container1', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'User total food consumption habits'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme 
+                                && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                data: [{
+                    name: 'Bought',
+                    y: j,
+                    color: '#53d926'
+                }, {
+                    name: 'Wasted',
+                    y: k,
+                    color: '#ff794d'
+                }]
+            }]
+        });
+     });
+        
+    });
 
-
-
-
-
-
-<div id="canvas-holder" style="min-width: 320px; max-width: 800px; height: 400px; margin: -90px">
-		<canvas id="chart-area"></canvas>
-	</div>
-
-	</div>
-
-	<script>
-		var randomScalingFactor = function() {
-			return Math.round(Math.random() * 100);
-		};
-
-		var config = {
-			type: 'pie',
-			data: {
-				datasets: [{
-					data: [
-						7, 3
-					],
-					backgroundColor: [
-						window.chartColors.green,
-						window.chartColors.red
-					],
-					label: 'Dataset 1'
-				}],
-				labels: [
-					'Bought',
-					'Wasted'
-				]
-			},
-			options: {
-				responsive: true
-			}
-		};
-
-		window.onload = function() {
-			var ctx = document.getElementById('chart-area').getContext('2d');
-			window.myPie = new Chart(ctx, config);
-		};
 
 	</script>
   
 
 
 <?php
-  include_once 'footer.php';
+  include'includes/footer.php';
  ?>
