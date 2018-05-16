@@ -52,7 +52,12 @@ session_start();
 				<a href="aboutus.php">About Us</a>	
         	</div>
 		</div>
-
+		
+<?php
+if(isset($_GET['Message'])){
+    echo $_GET['Message'];
+}
+?>
 	</div>
 
 

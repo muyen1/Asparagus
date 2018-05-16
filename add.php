@@ -23,7 +23,7 @@ else {
     }
     else {
         $_SESSION['message'] = 'Failed!';
-        header("location: error.php");
+        header("location: ../error/error.php");
     }
 
 }
