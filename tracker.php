@@ -9,13 +9,8 @@ require 'includes/dbh.inc.php';
 <html>
     <head>
         <title>Form</title>
-       <link rel="stylesheet" href="css/style.css">
+        <?php include 'css/css.html'; ?>
 
-        <!-- becauase no header -->
-        <script
-                src="https://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
     </head>
 
 
@@ -52,13 +47,58 @@ require 'includes/dbh.inc.php';
 
   	      	});
 
+                  $.ajax({
+                    url: "tracker_id.inc.php",
+                    dataType:"json",
+                    type:"GET",
+                    success: function(data){
+
+                      for(let i =0; i < data['tracked'].length; i++){
+
+                        //if userID session is not set, dont display.
+
+                        // var foodId = data['tracked'][i].foodID;
+                        // for(let j=0; i<data['food'].length; j++){
+                        //   if(foodId == data['food'][j].foodID){
+                        //     var food  = data['food'][j].foodname;
+                        //     break;
+                        //   }
+                        // }
+
+
+                        //var entry = document.createElement("div");
+                        //entry.style.border = "1px dotted black";
+
+                        var p = document.createElement("p");
+                        var text= document.createTextNode(data['tracked'][i].foodname +"/" +  data['tracked'][i].unit + ": total bought = " + data['tracked'][i].totalbought
+                                                                +", total wasted = " + data['tracked'][i].totalwasted
+                                                                +", consumption = " + data['tracked'][i].consumption
+                                                                +", roc = " + data['tracked'][i].roc
+                                                                +", safeamount = " + data['tracked'][i].safeamount
+                                                                +", time1 = " + data['tracked'][i].time1
+                                                                +", time2 = " + data['tracked'][i].time2);
+                        p.appendChild(text);
+
+
+                        document.getElementById("trackedList").appendChild(p);
+                      }
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                          $("#p1").text(textStatus + " " + errorThrown
+                              + jqXHR.responseText);
+                    }
+
+
+                  });
                   
-                $('#searchedFood').change(function(){
+                  $('#searchedFood').change(function(){
                       var description = $(this).val();
                       var product = $('#foodlist > option[value="' + description + '"]').data('unit');
                       
                       $('#autoUnit').val(product);
                   });
+
               //} 
             });
           </script>
@@ -73,12 +113,13 @@ require 'includes/dbh.inc.php';
                     <h1>Start Tracking Now!</h1>
                     
     <form action="newFoodToTracked.inc.php" method="POST">
-        <input type="reset" value="clear">        
-        
+<input type="reset" value="clear">        
 		<input list= "foodlist" name="searchedFood" placeholder="search for foods in the database" id="searchedFood"/>
 
 			  <datalist id="foodlist"></datalist>
 			  
+          </br>
+          <form action="tracker.php" method="post" autocomplete="off">
         
           
           <div class="field-wrap">

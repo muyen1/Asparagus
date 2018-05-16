@@ -2,16 +2,27 @@
 include 'includes/pdo_connect.php';
 
 //user id required for personal data.
+<<<<<<< HEAD
+//$_SESSION['uid'] = 1;
+
+
+if(!isset($_SESSION['uid'])){
+=======
 $_SESSION['userid'] = 1;
 
 
 if(!isset($_SESSION['userid'])){
+>>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
     echo "<script>console.log('no session user available, please log in')</script>";
     echo "</br>";
     echo "no session ID";
 } else {
     
+<<<<<<< HEAD
+    $userid = $_SESSION['uid'];
+=======
     $userid = $_SESSION['userid'];
+>>>>>>> 11a9c62b351b6a5547759eb5495b9c5154b831a7
   
     //$query = "select foodID, totalbought, totalwasted, consumption, roc, safeamount, time1, time2 from tracked where userID = '$userid'";
 

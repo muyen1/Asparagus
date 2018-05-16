@@ -86,8 +86,8 @@ if(isset($_POST['add']) && isset($_SESSION['userid'])){
             echo $data['status'];
             
             
-            $Message = urlencode('found duplicate item in the food database');
-         	header("location:error/error-page1.php?Message=".$Message);
+        //     $Message = urlencode('found duplicate item in the food database');
+        // 	header("location:error/error-page1.php?Message=".$Message);
 
             //needs redirection here
 
