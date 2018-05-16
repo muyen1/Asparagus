@@ -106,6 +106,10 @@ input, select {
     vertical-align:middle;
 }
 
+.redirect {
+    color: blue; 
+    font-size: 150pt;
+}
 
 
 

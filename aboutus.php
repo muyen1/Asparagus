@@ -1,13 +1,14 @@
 <?php
 	include 'includes/header.php';
+	
 ?>
-
+<script src="js/SmoothScroll.min.js"></script>
 <style>
 	a {
 		color: #5a5656;
 	}
 </style>
-
+	
 <div class="allBack">
 	<div class="aboutus">
 	<h1><strong>About Us</strong></h1>

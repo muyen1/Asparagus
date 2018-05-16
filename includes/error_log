@@ -68,27 +68,3 @@
 [11-May-2018 02:44:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/ross/includes/login.inc.php:29) in /home/asparagu/public_html/ross/includes/login.inc.php on line 30
 [11-May-2018 02:46:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asparagu/public_html/ross/includes/login.inc.php:29) in /home/asparagu/public_html/ross/includes/login.inc.php on line 30
 [11-May-2018 02:53:51 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/asparagu/public_html/ross/includes/login.inc.php on line 21
-[13-May-2018 01:37:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[13-May-2018 01:37:29 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[13-May-2018 01:37:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[13-May-2018 01:37:40 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[13-May-2018 01:37:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[13-May-2018 01:37:49 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[13-May-2018 06:02:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[13-May-2018 06:02:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[13-May-2018 06:03:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[13-May-2018 06:03:15 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[14-May-2018 15:41:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[14-May-2018 15:41:42 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[14-May-2018 15:41:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[14-May-2018 15:41:48 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[14-May-2018 15:55:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[14-May-2018 15:55:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[14-May-2018 15:55:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[14-May-2018 15:55:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[14-May-2018 15:59:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[14-May-2018 15:59:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[14-May-2018 16:00:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[14-May-2018 16:00:29 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
-[14-May-2018 16:00:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 16
-[14-May-2018 16:00:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/asparagu/public_html/includes/login.inc.php on line 18
